@@ -1,0 +1,88 @@
+/* Basic, clean styles for a tiny multi-page site */
+:root {
+  --bg: #0f172a;       /* slate-900 */
+  --panel: #111827;    /* gray-900 */
+  --text: #e5e7eb;     /* gray-200 */
+  --muted: #94a3b8;    /* slate-400 */
+  --brand: #22c55e;    /* green-500 */
+  --brand-dark: #16a34a;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0b1221);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-header {
+  background: var(--panel);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.logo a {
+  color: var(--text);
+  text-decoration: none;
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.nav a[aria-current="page"], .nav a:hover { color: var(--text); }
+
+.hero {
+  padding: 3rem 0;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--brand);
+  color: #062a12;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.button:hover { background: var(--brand-dark); color: #031a0a; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 2rem 0 3rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.site-footer {
+  background: var(--panel);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+label { display:block; margin: .5rem 0; }
+input, textarea {
+  width: 100%;
+  border-radius: .5rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  padding: .6rem .75rem;
+}
+button { cursor: pointer; }
