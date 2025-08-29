@@ -1,53 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home • Collaborative Static Website</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Stylish Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo"><a href="index.html">CollabSite</a></h1>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <div class="logo">✨ MySite</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>About this project</h2>
-      <p>This site demonstrates a simple GitHub Pages workflow with a feature branch, pull request, and deployment.</p>
-      <a class="button" href="about.html">Learn more</a>
-    </section>
+  <section class="hero">
+    <h1>Welcome to My Creative World</h1>
+    <p>Innovative. Stylish. Modern.</p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
 
-    <section class="grid">
-      <article class="card">
-        <h3>Static</h3>
-        <p>Plain HTML + CSS. No build steps required.</p>
-      </article>
-      <article class="card">
-        <h3>Versioned</h3>
-        <p>Use branches, pull requests, and reviews.</p>
-      </article>
-      <article class="card">
-        <h3>Hosted</h3>
-        <p>Served automatically via GitHub Pages.</p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> CollabSite</small>
+  <section class="features">
+    <div class="card">
+      <h2>💡 Creativity</h2>
+      <p>Fresh ideas and unique designs for modern experiences.</p>
     </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <div class="card">
+      <h2>🎨 Style</h2>
+      <p>Minimal yet elegant design that makes content shine.</p>
+    </div>
+    <div class="card">
+      <h2>⚡ Innovation</h2>
+      <p>Pushing boundaries to craft memorable digital spaces.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Stylish Website | Built with ❤️</p>
   </footer>
 </body>
 </html>
