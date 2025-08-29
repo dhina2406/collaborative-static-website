@@ -1,40 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About • Collaborative Static Website</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - My Stylish Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo"><a href="index.html">CollabSite</a></h1>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <div class="logo">✨ MySite</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <h2>About this project</h2>
-    <p>This site demonstrates a simple GitHub Pages workflow with a feature branch, pull request, and deployment.</p>
-    <ul>
-      <li>Zero dependencies</li>
-      <li>Fast to load</li>
-      <li>Easy to collaborate</li>
-    </ul>
-  </main>
+  <section class="page-header">
+    <h1>About Me</h1>
+    <p>Discover more about this creative journey.</p>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> CollabSite</small>
-    </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <section class="content">
+    <h2>Who I Am</h2>
+    <p>
+      I am a passionate creator who loves blending innovation and style into digital experiences. 
+      This website is a canvas for creativity and modern design.
+    </p>
+
+    <h2>My Vision</h2>
+    <p>
+      To inspire, create, and share unique ideas that leave a lasting impression.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 My Stylish Website | Designed with creativity</p>
   </footer>
 </body>
 </html>
