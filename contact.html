@@ -1,45 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact • Collaborative Static Website</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Stylish Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo"><a href="index.html">CollabSite</a></h1>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" aria-current="page">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <nav>
+      <div class="logo">✨ MySite</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <h2>Contact</h2>
-    <p>Static sites don’t have a backend. Use an email link or a form service.</p>
-    <p><a class="button" href="mailto:you@example.com?subject=Hello%20CollabSite">Email us</a></p>
+  <section class="page-header">
+    <h1>Contact Me</h1>
+    <p>Let’s connect and create something amazing together!</p>
+  </section>
 
-    <!-- If you later use a form service, swap the <a> above for this form:
-    <form action="https://formspree.io/f/your-id" method="POST">
-      <label>Name <input name="name" required></label>
-      <label>Email <input name="email" type="email" required></label>
-      <label>Message <textarea name="message" rows="5" required></textarea></label>
-      <button type="submit">Send</button>
+  <section class="content">
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
     </form>
-    -->
-  </main>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> CollabSite</small>
-    </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <footer>
+    <p>© 2025 My Stylish Website | Get in touch ✨</p>
   </footer>
 </body>
 </html>
